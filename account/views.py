@@ -3,6 +3,10 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
+
+# Correct import
+from notes.models import Note
+
 from .forms import SignUpForm
 from django.contrib.auth.forms import AuthenticationForm
 
@@ -34,6 +38,12 @@ def logout_view(request):
     logout(request)
     return redirect('login')
 
-@login_required
+login_required
 def dashboard_view(request):
-    return render(request, 'dashboard.html')
+    # Fetch the notes of the logged-in user
+    notes = Note.objects.filter(user=request.user)
+
+    # Render the dashboard with the notes
+    return render(request, 'notes/dashboard.html', {'notes': notes})
+def home_view(request):
+    return render(request, 'home.html')

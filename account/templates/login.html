@@ -1,7 +1,151 @@
-<h2>Login</h2>
-<form method="post">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <button type="submit">Login</button>
-</form>
-<p>Don't have an account? <a href="{% url 'signup' %}">Sign up here</a></p> 
+<!DOCTYPE html > 
+<html lang = "en" > 
+<head>
+    <meta charset = "UTF-8" > 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        :root {
+            --primary-color: #4a6fa5;
+            --secondary-color: #6c757d;
+            --success-color: #28a745;
+            --background-color: #f8f9fa;
+            --text-color: #343a40;
+            --border-color: #ced4da;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family : 'Segoe UI' , Tahoma , Geneva, Verdana , sans-serif ;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 04px10pxvar(--shadow-color);   
+            width: 100%;
+            max-width: 450px;
+            padding: 2rem;
+        }
+
+        h2 {
+            color : var ( --primary-color );
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--text-color);
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1pxsolidvar(--border-color);  
+            border-radius: 4px;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            box-sizing: border-box;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0002pxrgba(74, 111, 165, 0.2);    
+        }
+
+        .helptext {
+            color: var(--secondary-color);
+            font-size: 0.85rem;
+        }
+
+        ul.errorlist {
+            color: #dc3545;
+            margin: 0;
+            padding-left: 1.25rem;
+            font-size: 0.85rem;
+        }
+
+        button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 0.75rem1rem; 
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 1rem;
+            transition: background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: #3d5d8a;
+        }
+
+        .signup-link {
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+
+        a {
+            color : var ( --primary-color );
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Additional login page specific styles */
+        .forgot-password {
+            text-align: right;
+            font-size: 0.85rem;
+            margin-top: 0.5rem;
+        }
+
+        /* For smaller screens */
+        @media (max-width: 576px) {
+            .container {
+                padding: 1.5rem;
+                margin: 1rem;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <divclass="container"> 
+        <h2>Login</h2>
+        <form method = "post" > 
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Login</button>
+        </form>
+        <p class="signup-link">Don't have an account? <a href="{% url 'signup' %}">Sign up here</a></p>
+    </div>
+</body>
+</html>
