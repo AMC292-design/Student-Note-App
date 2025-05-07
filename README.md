@@ -12,13 +12,7 @@ Link To Student-Note-App: https://student-note-app-a67c78225eb0.herokuapp.com/
 
 Instructions:
 
-Use link in README document. The Note App will open in your browser. You will be taken to the login/signup page: -If New User select the link for signup page and enter a username and password, and you will then be redirected back to the login page where you will enter your chosen username and password you created on the signup page -If Existing User remains on the login page and enters your username and password After successfully logging into the webpage, you will be at the main page, "Job Application," where you can add job entries such as Name of Job, Position Applied, and Job Status. Please feel free to add additional job entries as necessary. Once you submit the entry, you can update or delete the job entry. The Landing Page is also accessible via a link from the main page where logout is hosted.
-
-Planning Material:
-
-Not included
-
--Open it with the Terminal, or find it in the Project Folder.
+Use link in README document. The Note App will open in your browser. You will be on the main page, "StudyNotes", where you can explore the website's About section, Testimonial section, Quick Links, Resources, and Contact information. AT the top right-hand corner there is a login/signup button: -If New User select the link for signup page and enter a username and password, and you will then be redirected back to the login page where you will enter your chosen username and password you created on the signup page -If Existing User remains on the login page and enters your username and password After successfully logging into the webpage, The Note application page will appear. Please feel free to add additional note entries as necessary. Once you submit the entry, you can update or delete the note entry.
 
 Dependencies:
 
