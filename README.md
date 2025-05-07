@@ -4,7 +4,7 @@ Final Project Title: Student Note App
 
 Overview: Web Browser-based student note-taking app. 
 
-Description: This project is a web-based browser job tracker. The job tracker enables current job seekers an all-in-one place to manually keep track of their job searches and the current status of their particular jobs applied to. The job tracker's simplistic and minimalistic build allows job seekers to focus on easily navigating the website and the easy-to-use features such as inputting the information, saving it, having the option to update existing information or the job status, and deleting entries upon their choosing. Job seekers have the autonomy for each entry to be reflected as the user so chooses, thus allowing for a user-friendly experience, which was intended for the job tracker.
+Description: This project is a web-based browser note-taking app. The note-taking app is marketed towards Students. It gives current Students an all-in-one place to manually keep track, create, edit, and delete their notes. Rather, the notes are for class or saving lab and homework due dates; this Student Note-taking app is up for the job! The application build allows Students to focus on easily navigating the website and the easy-to-use features such as inputting the information, saving it, having the option to update existing information, and deleting entries upon their choosing. Students have the autonomy for each note entry to be reflected as the user chooses, thus allowing for a user-friendly experience intended for the Student.
 
 Getting Started
 
@@ -39,6 +39,8 @@ Full CRUD
 Next Steps (Future Endeavors):
 
 Create the ability to access the dashboard page from the Notes application page
+
+Add more styling to the Note App Page
 
 
 Authors:
